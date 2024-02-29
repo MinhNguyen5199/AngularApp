@@ -1,6 +1,6 @@
 # Library Management System using Angular and Dotnet8 - RestfulAPI
 
-This is the back-end repository used by this app: https://github.com/MinhNguyen5199/.NET-8 
+This is the front-end repository of this back-end repository: https://github.com/MinhNguyen5199/.NET-8 
 
 ## The purpose of this project is to learn and practice concepts related to:
 > - Angular 17
