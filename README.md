@@ -13,12 +13,12 @@ This is the back-end repository used by this app: https://github.com/MinhNguyen5
 > - Dependency Injection in .NET
 
 ## In this Website, I have created 
- 🔑 Authentication System : User would be able to login and create account.
- 🔑 JWT Authentication : User's data will be stored in tokens in browser.
- 🔑 Role based Authorization : Some features are only accessible to admin, some can be access by user and admin.
- 🔑 Manage Books and Categories : Admin and inser/delete books/categories in the Library.
- 🔑 Blocking / Disabling : Admin can block/unblock or disable/enable any User.
- 🔑 Fine Calculation : Users can also see their fine, if they doesn't submit book withing specified time.
+🔑 Authentication System : User would be able to login and create account.<br>
+🔑 JWT Authentication : User's data will be stored in tokens in browser.<br>
+🔑 Role based Authorization : Some features are only accessible to admin, some can be access by user and admin.<br>
+🔑 Manage Books and Categories : Admin and inser/delete books/categories in the Library.<br>
+🔑 Blocking / Disabling : Admin can block/unblock or disable/enable any User.<br>
+🔑 Fine Calculation : Users can also see their fine, if they doesn't submit book withing specified time.<br>
 
 ## How to run locally
 
