@@ -1,0 +1,23 @@
+<mat-card>
+  <mat-card-content>
+    <h1>{{ panelName }}</h1>
+  </mat-card-content>
+</mat-card>
+<div class="user-info">
+  @if (loggedIn) {
+  <div class="name">Hi, {{ name }}</div>
+
+  <button mat-raised-button color="accent" routerLink="/profile">
+    Profile
+  </button>
+  <button mat-raised-button color="warn" (click)="logout()">Log Out</button>
+  }
+</div>
+
+<mat-nav-list>
+  @for (item of navItems; track navItems) {
+  <a mat-list-item routerLink="/{{ item.link }}" routerLinkActive="active-link">
+    {{ item.value }}
+  </a>
+  }
+</mat-nav-list>

@@ -1,0 +1,11 @@
+<mat-toolbar color="primary">
+    <button
+    mat-icon-button
+    style="margin-left: -1.5rem"
+    *ngIf="isSmallScreen$ | async"
+    (click)="toggleSidenav()"
+  >
+    <mat-icon>menu</mat-icon>
+  </button>
+    <span>Library Management Sytem</span>
+</mat-toolbar>

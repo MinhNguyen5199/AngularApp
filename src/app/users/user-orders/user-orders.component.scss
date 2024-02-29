@@ -1,0 +1,44 @@
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 1rem;
+
+  .pending,
+  .returned {
+    mat-card {
+      width: 100%;
+      margin-bottom: 1rem;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  @media screen and (min-width: 600px) {
+    .pending,
+    .returned {
+      mat-card {
+        width: auto;
+        margin: 0;
+      }
+    }
+  }
+
+  table {
+    .mat-mdc-cell,
+    .mat-mdc-header-cell {
+      font-size: 1.1rem;
+    }
+
+    .mat-mdc-header-cell {
+      font-style: italic;
+    }
+  }
+}

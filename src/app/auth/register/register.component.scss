@@ -1,0 +1,74 @@
+@import "../../../theme.scss";
+
+/* CSS */
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.register-form,
+.library-info {
+  flex: 1;
+}
+
+@media screen and (max-width: 1366px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+:host {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 90%;
+}
+
+.register-form {
+  width: 600px;
+  margin-bottom: 1rem;
+  mat-card {
+    mat-card-header {
+      display: flex;
+      justify-content: center;
+
+      mat-card-title {
+        font-size: 2rem;
+        color: $dark-accent-A200;
+      }
+    }
+    mat-grid-tile {
+      mat-form-field {
+        width: 100%;
+      }
+    }
+
+    mat-card-actions {
+      button {
+        margin: auto;
+        width: 80%;
+      }
+      h4 {
+        margin: 0;
+        padding-right: 1rem;
+      }
+    }
+  }
+}
+
+.library-info {
+  margin-left: 5rem;
+  width: 400px;
+  padding: 1rem;
+  border-left: 1px solid white;
+
+  mat-list-item {
+    height: auto;
+
+    p {
+      font-size: 1.2rem;
+      text-align: justify;
+      white-space: normal;
+    }
+  }
+}

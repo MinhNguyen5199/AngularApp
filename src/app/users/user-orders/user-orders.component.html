@@ -1,0 +1,42 @@
+<div fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="1rem">
+    <section class="pending">
+      <mat-card>
+        <mat-card-content>
+          <h2>Pending Returns ({{ pendingReturns.length }})</h2>
+        </mat-card-content>
+      </mat-card>
+  
+      <ng-container *ngIf="pendingReturns.length > 0; else noPendingReturns">
+        <page-table [columns]="columnsForPendingReturns" [dataSource]="pendingReturns"></page-table>
+      </ng-container>
+  
+      <ng-template #noPendingReturns>
+        <mat-card>
+          <mat-card-content>
+            <h2>No Orders Done Yet!</h2>
+          </mat-card-content>
+        </mat-card>
+      </ng-template>
+    </section>
+  
+    <section class="returned">
+      <mat-card>
+        <mat-card-content>
+          <h2>Returned Orders ({{ completedReturns.length }})</h2>
+        </mat-card-content>
+      </mat-card>
+  
+      <ng-container *ngIf="completedReturns.length > 0; else noCompletedReturns">
+        <page-table [columns]="columnsForCompletedReturns" [dataSource]="completedReturns"></page-table>
+      </ng-container>
+  
+      <ng-template #noCompletedReturns>
+        <mat-card>
+          <mat-card-content>
+            <h2>No Orders Done Yet!</h2>
+          </mat-card-content>
+        </mat-card>
+      </ng-template>
+    </section>
+  </div>
+  
