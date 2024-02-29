@@ -12,6 +12,14 @@ This is the back-end repository used by this app: https://github.com/MinhNguyen5
 > - Continuous Integration/Continuous Deployment
 > - Dependency Injection in .NET
 
+## In this Website, I have created 
+ 🔑 Authentication System : User would be able to login and create account.
+ 🔑 JWT Authentication : User's data will be stored in tokens in browser.
+ 🔑 Role based Authorization : Some features are only accessible to admin, some can be access by user and admin.
+ 🔑 Manage Books and Categories : Admin and inser/delete books/categories in the Library.
+ 🔑 Blocking / Disabling : Admin can block/unblock or disable/enable any User.
+ 🔑 Fine Calculation : Users can also see their fine, if they doesn't submit book withing specified time.
+
 ## How to run locally
 
 In the file api.service.ts ( in directory src/app/shared/services/api.service.ts): you set baseUrl to baseUrl: string = 'https://localhost:7197/api/Library/';
